@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pollinator Commons | NSF DISES Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="#home" class="site-logo" onclick="showSection('home')">
+        <span class="logo-mark">🐝</span>
+        <span class="logo-text">Pollinator Commons</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav id="main-nav">
+        <a href="#home"         onclick="showSection('home')"         class="nav-link active" data-section="home">Home</a>
+        <a href="#about"        onclick="showSection('about')"        class="nav-link" data-section="about">About</a>
+        <a href="#team"         onclick="showSection('team')"         class="nav-link" data-section="team">Team</a>
+        <a href="#research"     onclick="showSection('research')"     class="nav-link" data-section="research">Research</a>
+        <a href="#publications" onclick="showSection('publications')" class="nav-link" data-section="publications">Publications</a>
+        <a href="#news"         onclick="showSection('news')"         class="nav-link" data-section="news">News</a>
+        <a href="#contact"      onclick="showSection('contact')"      class="nav-link" data-section="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============================================================ HOME -->
+    <section id="home" class="page-section active">
+
+      <div class="hero">
+        <div class="hero-text">
+          <p class="hero-eyebrow">NSF DISES Award #2409184</p>
+          <h1>Do landscapes shape the emergence of institutions governing the pollinator commons?</h1>
+          <p class="hero-sub">An international research collaboration studying pollinator-dependent smallholder farming in the Western Himalayas and Central New York — and the collective action needed to protect the wild bees that sustain them.</p>
+          <div class="hero-ctas">
+            <button class="btn-primary" onclick="showSection('about')">About the Project</button>
+            <button class="btn-secondary" onclick="showSection('research')">Our Research</button>
+          </div>
+        </div>
+        <div class="hero-graphic">
+          <!-- Replace with a real photo: <img src="images/hero.jpg" alt="Apple orchard in the Himalayas"> -->
+          <div class="hero-placeholder">
+            <div class="placeholder-icon">🍎🐝</div>
+            <p>Photo: Apple orchards, Uttarakhand, India</p>
+            <p class="placeholder-hint">[Replace with project photo]</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-highlights">
+       <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-icon">🗺️</div>
+          <h3>Two Study Regions</h3>
+          <p>Mukteshwar, Uttarakhand (India) and Central New York (USA) — both apple-growing regions facing pollinator declines and land-use change.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🔬</div>
+          <h3>Interdisciplinary Approach</h3>
+          <p>Combining pollinator ecology, remote sensing, social surveys, and agent-based modeling to understand the full socio-environmental system.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🤝</div>
+          <h3>Collective Action</h3>
+          <p>Investigating when and where smallholder farmers can cooperate to govern pollinators as a shared resource — a novel commons problem.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">📅</div>
+          <h3>2024–2027</h3>
+          <p>A three-year project funded by the NSF Dynamics of Integrated Socio-Environmental Systems (DISES) program.</p>
+        </div>
+       </div><!-- /.highlights-grid -->
+      </div><!-- /.home-highlights -->
+
+      <div class="home-affil">
+        <p class="affil-label">Principal Institutions</p>
+        <div class="affil-logos">
+          <span class="affil-name">Cornell University</span>
+          <span class="affil-sep">·</span>
+          <span class="affil-name">George Washington University</span>
+          <span class="affil-sep">·</span>
+          <span class="affil-name">Boise State University</span>
+          <span class="affil-sep">·</span>
+          <span class="affil-name">CEDAR, Dehradun</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============================================================ ABOUT -->
+    <section id="about" class="page-section">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <h2>About the Project</h2>
+        </div>
+
+        <div class="about-overview">
+          <p class="lead">Wild insect pollinator declines are threatening both food production and ecosystem integrity worldwide. For smallholder farmers of pollinator-dependent crops, this decline can threaten already precarious livelihoods. Despite urgent need, there is remarkably little evidence of collective action institutions governing wild pollinators — this project asks why, and what it would take to change that.</p>
+        </div>
+
+        <div class="two-col">
+          <div>
+            <h3>The Problem</h3>
+            <p>Apple farming communities in both the Western Himalayas and Central New York depend on wild bee pollination services, yet those services are declining. The problem has been framed as a "tragedy of the commons," yet existing top-down interventions have not been effective. Meanwhile, the spatial scale at which pollinators operate does not match the scale at which current institutions govern land use — leaving pollinators ungoverned.</p>
+            <p>This creates a novel commons problem: a shared resource that is mobile, cryptic, and whose boundaries do not align neatly with property or jurisdictional boundaries.</p>
+
+            <h3>Our Approach</h3>
+            <p>We use a structured comparison between Uttarakhand, India and Central New York, USA — two regions that share the apple-growing context but differ in biophysical character, land-use dynamics, and existing institutions. This comparative design allows us to isolate the spatial, social, and environmental conditions under which collective action might emerge.</p>
+          </div>
+          <div>
+            <h3>Study Sites</h3>
+            <div class="site-card">
+              <h4>🏔️ Mukteshwar, Uttarakhand, India</h4>
+              <p>60 smallholder apple farms across an elevation gradient in the lower Himalayas, in collaboration with the Center for Ecology Development and Research (CEDAR). Apple yields in Uttarakhand are the lowest among India's major apple-producing states, and pollination limitation has been documented as a significant driver.</p>
+            </div>
+            <div class="site-card">
+              <h4>🍎 Central New York &amp; Hudson Valley, USA</h4>
+              <p>18+ apple farms in New York State, with parallel ecological sampling (pan traps, pollination exclusion experiments, forest surveys) and a statewide farmer survey of over 3,000 farms to assess collective action potential.</p>
+            </div>
+
+            <h3>Project Period</h3>
+            <p>October 1, 2024 – September 30, 2027<br>
+            NSF Award #2409184</p>
+          </div>
+        </div>
+
+        <div class="goals-block">
+          <h3>Core Research Goals</h3>
+          <div class="goals-grid">
+            <div class="goal-item">
+              <span class="goal-num">Goal 1</span>
+              <p>Examine how on-farm practices interact with landscape context to influence pollinator communities</p>
+            </div>
+            <div class="goal-item">
+              <span class="goal-num">Goal 2</span>
+              <p>Examine how spatial variation in social, institutional, and environmental context influences farmers' interest and ability to engage in collective action</p>
+            </div>
+            <div class="goal-item">
+              <span class="goal-num">Goal 3</span>
+              <p>Determine the threshold of spatial extent and farm configuration necessary to generate positive feedbacks that maintain sufficient pollinator supply</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================ TEAM -->
+    <section id="team" class="page-section">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <h2>Research Team</h2>
+          <p class="section-sub">An international team of ecologists, geographers, entomologists, and social scientists.</p>
+        </div>
+
+        <h3 class="team-group-label">Principal Investigators</h3>
+        <div class="team-grid">
+
+          <div class="team-card">
+            <div class="team-photo-placeholder">[Photo]</div>
+            <div class="team-info">
+              <h4>Ginger R. Allington</h4>
+              <p class="team-role">Principal Investigator</p>
+              <p class="team-affil">Cornell University — Dept. of Natural Resources and the Environment</p>
+              <p class="team-bio">Interdisciplinary scientist whose work draws on social, ecological, and remote sensing data to model dynamics in socio-environmental systems. Extensive experience leading multi-disciplinary international fieldwork.</p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-photo-placeholder">[Photo]</div>
+            <div class="team-info">
+              <h4>Aman Luthra</h4>
+              <p class="team-role">Co-PI</p>
+              <p class="team-affil">George Washington University — Dept. of Geography</p>
+              <p class="team-bio">Environmental and economic geographer investigating the consequences of socio-environmental change on rural livelihoods in India. Over 10 years of fieldwork experience in the Himalayas.</p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-photo-placeholder">[Photo]</div>
+            <div class="team-info">
+              <h4>Monique J. Rivera</h4>
+              <p class="team-role">Co-PI</p>
+              <p class="team-affil">Cornell University — Cornell Cooperative Extension</p>
+              <p class="team-bio">Agricultural entomologist studying integrated pest management for fruit cultivation, with ongoing outreach to apple growers and policy makers across New York State. Host of the <em>Scaffolds</em> podcast.</p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-photo-placeholder">[Photo]</div>
+            <div class="team-info">
+              <h4>Vishal Singh</h4>
+              <p class="team-role">Co-PI</p>
+              <p class="team-affil">Center for Ecology Development and Research (CEDAR), Dehradun, India</p>
+              <p class="team-bio">Forest resource scientist with decades of experience in the lower Himalayas studying community resource use dynamics and forest degradation.</p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-photo-placeholder">[Photo]</div>
+            <div class="team-info">
+              <h4>Matthew A. Williamson</h4>
+              <p class="team-role">Co-PI</p>
+              <p class="team-affil">Boise State University</p>
+              <p class="team-bio">Landscape ecologist and human-environment geographer with expertise in public policy, social psychology, and spatial agent-based modeling.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <h3 class="team-group-label">Collaborators &amp; Key Personnel</h3>
+        <div class="team-grid team-grid-sm">
+
+          <div class="team-card-sm">
+            <h4>Ann Fraser</h4>
+            <p class="team-role">Co-Investigator</p>
+            <p class="team-affil">Kalamazoo College</p>
+            <p class="team-bio">Entomologist and ecologist specializing in insect pollinators of eastern North America and northern India.</p>
+          </div>
+
+          <div class="team-card-sm">
+            <h4>Ryan C. Blackburn</h4>
+            <p class="team-role">Postdoctoral Researcher</p>
+            <p class="team-affil">Cornell University</p>
+            <p class="team-bio">Ecologist specializing in remote sensing of vegetation in grassland and forest systems, particularly using terrestrial and mobile LiDAR.</p>
+          </div>
+
+          <div class="team-card-sm">
+            <h4>Niloofar Jebelli</h4>
+            <p class="team-role">Postdoctoral Researcher</p>
+            <p class="team-affil">Cornell University</p>
+            <p class="team-bio">Postdoctoral researcher contributing to social and institutional data collection and analysis.</p>
+          </div>
+
+          <div class="team-card-sm">
+            <h4>Preeti Virkar</h4>
+            <p class="team-role">Collaborator / Entomologist</p>
+            <p class="team-affil">India</p>
+            <p class="team-bio">Entomologist specializing in pollinators of the lower Himalayas and bee diversity in apple orchards.</p>
+          </div>
+
+          <div class="team-card-sm">
+            <h4>Kathryn Bills Walsh</h4>
+            <p class="team-role">Staff Scientist</p>
+            <p class="team-affil">Cornell University</p>
+            <p class="team-bio">Conservation social scientist with expertise in quantitative survey methods.</p>
+          </div>
+
+          <div class="team-card-sm">
+            <h4>Nidhi Singh</h4>
+            <p class="team-role">Other Professional</p>
+            <p class="team-affil">India</p>
+            <p class="team-bio">Contributes to social and institutional fieldwork in Uttarakhand, India.</p>
+          </div>
+
+        </div>
+
+        <div class="team-note">
+          <p>The project also involves graduate students, undergraduate researchers, and local field technicians in both the United States and India, including students from Tompkins-Cortland Community College and collaborating universities in Uttarakhand.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================ RESEARCH -->
+    <section id="research" class="page-section">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <h2>Research</h2>
+          <p class="section-sub">Our work spans three integrated research questions, combining field ecology, social science, remote sensing, and computational modeling.</p>
+        </div>
+
+        <div class="research-rq">
+          <div class="rq-item">
+            <div class="rq-label">Research Question 1</div>
+            <h3>How does landscape context interact with on-farm practices to shape pollinator supply?</h3>
+            <ul>
+              <li><strong>Pollinator community sampling</strong> — Pan traps and hand-netting at 60 farms in Uttarakhand and 18+ farms in New York across bloom and post-bloom periods</li>
+              <li><strong>Pollination exclusion experiments</strong> — Quantifying the degree of pollen limitation on apple production at both sites</li>
+              <li><strong>Forest structure mapping</strong> — LiDAR scanning of forest plots adjacent to orchards to assess how forest structure drives pollinator communities</li>
+              <li><strong>Land use / land cover mapping</strong> — Sentinel-2 satellite imagery and random forest classification to map landscape composition within 500m buffers around farms</li>
+              <li><strong>Camera traps</strong> — Deployed across farm sites in India and New York to document pollinator visitation</li>
+            </ul>
+          </div>
+
+          <div class="rq-item">
+            <div class="rq-label">Research Question 2</div>
+            <h3>How do social, institutional, and environmental landscapes influence farmers' interest in collective action?</h3>
+            <ul>
+              <li><strong>Household surveys</strong> — Baseline surveys with 60 farmers in Uttarakhand examining knowledge of pollinator dependence, perceptions of decline, and willingness to engage in conservation</li>
+              <li><strong>Statewide farmer survey</strong> — Mail survey distributed to over 3,000 farmers across New York State assessing awareness of wild pollinators and collective action potential</li>
+              <li><strong>Qualitative interviews</strong> — In-depth interviews exploring farmer decision-making and institutional constraints</li>
+              <li><strong>Social network analysis</strong> — Characterizing individual and landscape-scale patterns in propensity for collective action</li>
+            </ul>
+          </div>
+
+          <div class="rq-item">
+            <div class="rq-label">Research Question 3</div>
+            <h3>What spatial configurations would generate positive feedbacks sufficient to sustain pollinator supply?</h3>
+            <ul>
+              <li><strong>Agent-based model (ABM)</strong> — Simulating the emergence of collective action institutions under different spatial conditions, with development led by Co-PI Williamson</li>
+              <li><strong>Scenario generation</strong> — Working with stakeholders to generate alternative future landscape scenarios</li>
+              <li><strong>Threshold analysis</strong> — Determining the spatial extent and farm configuration needed for cooperative management to become self-sustaining</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="fieldwork-status">
+          <h3>Current Fieldwork Status</h3>
+          <div class="status-grid">
+            <div class="status-item status-complete">
+              <span class="status-badge">Complete</span>
+              <p>Year 1 &amp; 2 pollinator sampling — Uttarakhand (60 farms, pre- and during-bloom)</p>
+            </div>
+            <div class="status-item status-complete">
+              <span class="status-badge">Complete</span>
+              <p>Baseline social surveys — Uttarakhand (60 farmers)</p>
+            </div>
+            <div class="status-item status-complete">
+              <span class="status-badge">Complete</span>
+              <p>Pan traps and pollination exclusion — 18 NY farms; 10 forest sites established</p>
+            </div>
+            <div class="status-item status-ongoing">
+              <span class="status-badge">Ongoing</span>
+              <p>Statewide NY farmer survey (3,000+ farms)</p>
+            </div>
+            <div class="status-item status-ongoing">
+              <span class="status-badge">Ongoing</span>
+              <p>Agent-based model development and analysis</p>
+            </div>
+            <div class="status-item status-planned">
+              <span class="status-badge">Planned</span>
+              <p>Stakeholder scenario workshops — both regions (Year 3)</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================ PUBLICATIONS -->
+    <section id="publications" class="page-section">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <h2>Publications &amp; Outputs</h2>
+        </div>
+
+        <h3 class="pub-group-label">Published</h3>
+        <div class="pub-list">
+
+          <div class="pub-item">
+            <p class="pub-citation">Virkar, P., Fraser, A., Luthra, A., Allington, G., Rana, S., Suyal, R., Rawat, A., Ratna, A., Cunningham, K., Raikwal, N., Pandey, A., &amp; Singh, V. (2025). Bee diversity in apple orchards of the Lower Himalaya: research synthesis, a new field study, and future needs. <em>Journal of Pollination Ecology</em>, 39(17), 213–240.</p>
+            <div class="pub-links">
+              <a href="https://nsf-par.gov" class="pub-link" target="_blank">NSF-PAR</a>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <p class="pub-citation">Luthra, A., Allington, G.R.H., Rana, S., Suyal, R., Cunningham, K., &amp; Fraser, A.M. (2026). Dangerously ignorant or radically environmentalist? A review and a case study of pollination knowledge systems. <em>Journal of Environmental Studies and Sciences</em>, 16, 544–556. <a href="https://doi.org/10.1007/s13412-025-01053-0" target="_blank">https://doi.org/10.1007/s13412-025-01053-0</a></p>
+          </div>
+
+          <div class="pub-item">
+            <p class="pub-citation">Allington, G.R.H. &amp; Luthra, A. (2024). Geographies of the pollinator commons. <em>Progress in Environmental Geography</em>. <a href="https://doi.org/10.1177/27539687231224457" target="_blank">https://doi.org/10.1177/27539687231224457</a></p>
+          </div>
+
+          <div class="pub-item">
+            <p class="pub-citation">Fraser, A., [et al.] (2024). Pollination deficit in apples increases with elevation. <em>[Journal — see project files for full citation]</em>.</p>
+          </div>
+
+        </div>
+
+        <h3 class="pub-group-label">In Preparation</h3>
+        <div class="pub-list">
+
+          <div class="pub-item pub-inprep">
+            <p class="pub-citation">Blackburn, R.C., Allington, G., Fraser, A., Luthra, A., Rivera, M.J., Whiteside, R., &amp; Williamson, M.A. Forest structure drives pollinator community composition in agricultural landscapes of New York State. <em>Manuscript in preparation.</em></p>
+          </div>
+
+          <div class="pub-item pub-inprep">
+            <p class="pub-citation">Blackburn, R.C., Allington, G., Whiteside, R., Singh, V., et al. Forest structure across degradation gradients in oak forests of Uttarakhand and its relationship to bee diversity. <em>Manuscript in preparation.</em></p>
+          </div>
+
+          <div class="pub-item pub-inprep">
+            <p class="pub-citation">Allington, G., Luthra, A., Singh, V., et al. Enabling conditions for the emergence of collective action around pollination services: evidence from smallholder apple farming communities in Uttarakhand, India. <em>Manuscript in preparation.</em></p>
+          </div>
+
+          <div class="pub-item pub-inprep">
+            <p class="pub-citation">Williamson, M.A., Allington, G., Luthra, A., et al. The apple is the cow: reconciling ecosystem services and common pool resource theory for the governance of mobile, cryptic resources. <em>Manuscript in preparation.</em></p>
+          </div>
+
+          <div class="pub-item pub-inprep">
+            <p class="pub-citation">Allington, G., Williamson, M.A., et al. Spatial subsidies: the influence of forest proximity on pollinator visitation rates in apple orchards. <em>Manuscript in analysis stage.</em></p>
+          </div>
+
+          <div class="pub-item pub-inprep">
+            <p class="pub-citation">Allington, G., Luthra, A., Williamson, M.A., Walsh, K., et al. Awareness of the provision of pollination services from wild bees &amp; syrphid across NY State: implications for engagement in conservation. <em>Data collection ongoing.</em></p>
+          </div>
+
+        </div>
+
+        <h3 class="pub-group-label">Conference Presentations</h3>
+        <div class="pub-list">
+
+          <div class="pub-item">
+            <p class="pub-citation">Virkar, P., et al. (2026). Past, present and the future: What the data tells about bee biodiversity in the apple orchards of the Lower Himalayas. <em>Conservation Asia Congress, International Society for Conservation Biology</em>. Nepal.</p>
+          </div>
+
+          <div class="pub-item">
+            <p class="pub-citation">Blackburn, R.C., Allington, G., Fraser, A., Luthra, A., Rivera, M.J., Whiteside, R., &amp; Williamson, M.A. (2026). Subcanopy structure drives pollinator communities in New York forests. <em>Ecological Society of America Annual Meeting</em>. Salt Lake City, UT.</p>
+          </div>
+
+          <div class="pub-item">
+            <p class="pub-citation">Luthra, A. (2025, July 23). Pollinators and community science in the Himalayas. <em>In-sight Humanitarian Mentorship Program</em>.</p>
+          </div>
+
+        </div>
+
+        <h3 class="pub-group-label">Media &amp; Outreach</h3>
+        <div class="pub-list">
+
+          <div class="pub-item">
+            <p class="pub-citation">Interview about the project on the <em>Scaffolds</em> podcast (Cornell Cooperative Extension). 6 May 2025. <a href="https://podcasts.apple.com/us/podcast/6-may-2025/id1679025926?i=1000706581159" target="_blank">Listen on Apple Podcasts</a></p>
+          </div>
+
+          <div class="pub-item">
+            <p class="pub-citation">Article in the Cornell Chronicle: "NYS-Himalaya pollinator project receives $1.8M grant." 23 October 2024. <a href="https://news.cornell.edu/stories/2024/10/nys-himalaya-pollinator-project-receives-18mgrant" target="_blank">Read the article</a></p>
+          </div>
+
+          <div class="pub-item">
+            <p class="pub-citation">Singh, N. (2026). "Uttarakhand's apple production is caught in a cascading chain of risks." <em>Down to Earth Magazine</em>. <a href="https://www.downtoearth.org.in" target="_blank">Down to Earth</a></p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================ NEWS -->
+    <section id="news" class="page-section">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <h2>News &amp; Updates</h2>
+        </div>
+
+        <div class="news-list">
+
+          <article class="news-item">
+            <div class="news-date">November 2026</div>
+            <h3>Forest Structure LiDAR Fieldwork — Ithaca, NY</h3>
+            <p>Postdoc Ryan Blackburn led fieldwork to collect LiDAR measurements at forest sites adjacent to apple orchards in Ithaca, NY. This work adds to datasets from 10 newly established orchard-adjacent forest plots to examine how forest structure shapes pollinator communities.</p>
+          </article>
+
+          <article class="news-item">
+            <div class="news-date">August 2026</div>
+            <h3>ESA Annual Meeting Presentation</h3>
+            <p>Ryan Blackburn and co-authors presented findings on how subcanopy forest structure drives pollinator community composition in New York forests at the Ecological Society of America Annual Meeting in Salt Lake City, UT.</p>
+          </article>
+
+          <article class="news-item">
+            <div class="news-date">Summer 2026</div>
+            <h3>Year 2 Fieldwork Complete — New York</h3>
+            <p>The team deployed 22 camera traps across 11 NY farms, completed pan trap and pollination exclusion sampling at 18 farms, and established 10 new forest sites. The statewide farmer survey was distributed to over 3,000 NY farmers.</p>
+          </article>
+
+          <article class="news-item">
+            <div class="news-date">June 2026</div>
+            <h3>Project Presentation at UPES, Dehradun</h3>
+            <p>PIs Allington, Singh, Williamson, and Luthra presented the project's goals, methods, and Year 1–2 findings at the University of Petroleum and Energy Studies (UPES) in Dehradun. Discussions included the potential for UPES to serve as an institutional home for the project's insect specimen collection.</p>
+          </article>
+
+          <article class="news-item">
+            <div class="news-date">August 2026</div>
+            <h3>New Publication: Pollination Knowledge Systems</h3>
+            <p>Luthra, Allington, and colleagues published "Dangerously ignorant or radically environmentalist? A review and a case study of pollination knowledge systems" in the <em>Journal of Environmental Studies and Sciences</em>.</p>
+          </article>
+
+          <article class="news-item">
+            <div class="news-date">May 2025</div>
+            <h3><em>Scaffolds</em> Podcast Feature</h3>
+            <p>The project was featured on the <em>Scaffolds</em> podcast, produced by Co-PI Monique Rivera and supported by Cornell Cooperative Extension. <a href="https://podcasts.apple.com/us/podcast/6-may-2025/id1679025926?i=1000706581159" target="_blank">Listen here.</a></p>
+          </article>
+
+          <article class="news-item">
+            <div class="news-date">September 2025</div>
+            <h3>First Publication: Bee Diversity in Himalayan Apple Orchards</h3>
+            <p>Virkar, Fraser, Luthra, Allington and colleagues published a comprehensive synthesis of bee diversity in apple orchards of the lower Himalaya in the <em>Journal of Pollination Ecology</em>.</p>
+          </article>
+
+          <article class="news-item">
+            <div class="news-date">January 2025</div>
+            <h3>Year 1 Field Site Visit — Uttarakhand, India</h3>
+            <p>PI Allington, Co-PI Luthra, and Key Personnel Fraser travelled to Mukteshwar, Uttarakhand to meet with Co-PI Singh and CEDAR partners, test data collection protocols, and train five local field staff members.</p>
+          </article>
+
+          <article class="news-item">
+            <div class="news-date">October 2024</div>
+            <h3>Project Launches with $1.8M NSF Award</h3>
+            <p>The project officially launched with funding from the NSF Dynamics of Integrated Socio-Environmental Systems (DISES) program. <a href="https://news.cornell.edu/stories/2024/10/nys-himalaya-pollinator-project-receives-18mgrant" target="_blank">Read the Cornell Chronicle article.</a></p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================ CONTACT -->
+    <section id="contact" class="page-section">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="two-col">
+          <div>
+            <h3>Get in Touch</h3>
+            <p>For questions about the project, collaboration inquiries, or media requests, please reach out to the principal investigators:</p>
+
+            <div class="contact-entry">
+              <strong>Ginger R. Allington</strong> (Principal Investigator)<br>
+              Department of Natural Resources and the Environment<br>
+              Cornell University<br>
+              📧 <a href="mailto:gra38@cornell.edu">gra38@cornell.edu</a>
+            </div>
+
+            <div class="contact-entry">
+              <strong>Aman Luthra</strong> (Co-PI)<br>
+              Department of Geography<br>
+              George Washington University<br>
+              📧 <a href="mailto:amanluthra@gwu.edu">amanluthra@gwu.edu</a>
+            </div>
+
+            <div class="contact-entry">
+              <strong>For India-based inquiries:</strong><br>
+              Center for Ecology Development and Research (CEDAR)<br>
+              Dehradun, Uttarakhand, India<br>
+              🌐 <a href="https://www.cedarhimalaya.org" target="_blank">cedarhimalaya.org</a>
+            </div>
+          </div>
+
+          <div>
+            <h3>Project Links</h3>
+            <ul class="link-list">
+              <li>🐙 <a href="https://github.com/Pollinator-Commons" target="_blank">GitHub Organization</a> — Open-access code and analysis</li>
+              <li>📻 <a href="https://podcasts.apple.com/us/podcast/6-may-2025/id1679025926?i=1000706581159" target="_blank"><em>Scaffolds</em> Podcast</a> — Cornell Cooperative Extension apple-grower podcast</li>
+              <li>🗞️ <a href="https://news.cornell.edu/stories/2024/10/nys-himalaya-pollinator-project-receives-18mgrant" target="_blank">Cornell Chronicle</a> — Project launch article</li>
+              <li>📊 <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2409184" target="_blank">NSF Award #2409184</a></li>
+            </ul>
+
+            <h3>Partner Organizations</h3>
+            <ul class="link-list">
+              <li>Cornell University</li>
+              <li>George Washington University</li>
+              <li>Boise State University</li>
+              <li><a href="https://www.cedarhimalaya.org" target="_blank">Center for Ecology Development and Research (CEDAR)</a>, Dehradun</li>
+              <li>Kalamazoo College</li>
+              <li>Tompkins-Cortland Community College</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="funding-note">
+          <p>This project is supported by the National Science Foundation under Award #2409184 (Dynamics of Integrated Socio-Environmental Systems, DISES program). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="logo-mark">🐝</span> <strong>Pollinator Commons</strong> — NSF DISES Award #2409184
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/Pollinator-Commons" target="_blank">GitHub</a>
+        <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2409184" target="_blank">NSF Award</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Cornell University · George Washington University · Boise State University · CEDAR, Dehradun · 2024–2027</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
